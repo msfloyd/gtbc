@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-    <title> Web Site for a Small Church </title> 
-    <link href="https://fonts.googleapis.com/css?family=Chonburi|Montserrat:700|Open+Sans" rel="stylesheet">
-    </head>
-    <link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
-    <body>
-        
-<!--section for header on every page.-->    
-        <header>
-             <h1>Greater Tabernacle Baptist Church </h1>
-             <p>Rev. Jeffrey M. Crenshaw, Pastor <br>
-             <em>"We Walk By Faith"</em>  </p>
-        </header>
-   
-<!--section for menu bar on every page -->  
-        <div class="nav">
-          <ul >
-              <li> <a href="index.html">Home</a> </li>
-              <li> <a href="aboutUs.html">About Us </a> </li>
-              <li> <a href="calendar.html">Calendar/Events </a> </li>
-              <li> <a href="photos.html">Photo Gallery </a> </li>
-              <li> <a href="giving.html">Giving  </a></li>
-              <li> <a href="contactUs.html">Contact Us </a> </li>
+<head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- The above 3 meta tags *must* come first in the head; any other head 
+          content must come *after* these tags -->
+  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                  <!-- [if lt IE 9]>
+                      <script
+          src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                      <script
+          src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>  
+                  <!-- endif] -->
+          
+        <title> GTBC v2 </title>
+</head>
+ <!-- *********************************************************************** -->
+ 
+<body>
+    <div class="container-fluid">
+    <!--section for menu bar on every page. fixed to top of page. collapsible-->  
+        <nav class="navbar navbar-fixed-top navbar-default">
+         <div class="navbar-header">
+            <button type="button" data-target="#menubar" data-toggle="collapse" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menubar">
+          <ul class="nav nav-pills nav-justified">
+              <li role="presentation" > <a href="index.html">Home</a></li>
+              <li class="dropdown"> <a id="drop2" href="aboutUs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> About Us <span class="caret"></span> </a> 
+                  <ul class="dropdown-menu" aria-labelledby="drop2"> 
+                    <li><a href="ourchurch.html">Our Church</a></li> 
+                   <li><a href="pastor.html">Our Pastor</a></li> 
+                    <li><a href="ministries.html">Our Ministries</a></li>  
+                    <li role="separator" class="divider"></li> 
+                  </ul> </li> 
+              <li class="active" role="presentation" > <a href="calendar.html">Calendar/Events </a></li>
+ <!--             <li role="presentation" > <a href="photos.html">Photo Gallery </a></li> -->
+              <li role="presentation" > <a href="sermons.html">Sermons </a> </li>
+              <li role="presentation" > <a href="giving.html">Giving  </a></li>
+              <li role="presentation" > <a href="contactUs.html">Contact Us </a></li>
           </ul>  
-        </div>
+          </div> <!-- close navbar collapse div -->
+        </nav>
+   <br> <br> <br>
+  
+<!--section for header on every page.-->  
+    <div class="jumbotron">
+        <h1 class="noline">Welcome To <br>Greater Tabernacle Baptist Church</h1>
+        <h2 class="noline">Rev. Jeffrey M. Crenshaw, Pastor </h2>
+             <h3 class="noline"><span>"We Walk By Faith"</span></h3>
+    </div>
+    
+<!-- section for respective page content -->
+ <div class="panel panel-default">
+     <h2>UPCOMING EVENTS </h2>
      
-     
-<!--section for left side page content-->
-        <div class="leftside">
-            <a href="Images/WeeklyCal.jpg"><img src="Images/WeeklyCal.jpg"> </a>
-            <a href="Images/whatshappening.jpg"><img src="Images/whatshappening.jpg"> </a>
+    <h2>This Week</h2>
+    <div id="weather"></div><br>
+    <!-- image as a modal trigger -->
+    <a href="#thisweek" data-toggle="modal">
+        <img src="Images/thisweek.jpg" class="img-responsive  center-block" width="50%" /><br>
+    </a>
+
+    <div class="modal fade" id="thisweek" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img src="Images/thisweek.jpg" class="img-responsive center-block" width="100%"/>
+                </div>
+            </div>
         </div>
-       
-<!--section for main content on each page-->
-         <div class="main">
-            <h2 id="pagetitle"> CALENDAR/EVENTS</h2>
-                    <h3> <a href="Images/church2016_Calendar.pdf">Full Calendar </a> </h3><br>
-                    <h3 class="noline"> Upcoming Events<br></h3>
+    </div>        <div class="panel-body">
+                    <h3 class="calendar"> <a href="Images/church2016_Calendar.pdf" class="calendar">Full Calendar 2016 </a> </h3>
+                    <h4>(please note, requesting the full year calendar will load a pdf file)</h4><br>
                     
-    <!-- rolling three months; update monthly or as needed -->         
-
-                <div  id="cur-month">
-                       <h2> AUGUST </h2>
-		                <p> Saturday, August 6, 2016. 8:00am<br>
-		                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
-		                <p> Saturday, August 20, 2016<br>Community BBQ</p>
-		                <p> Saturday, August 27, 2016<br>
-		                <a href="Images/lobsterfest 2016.jpg">All You Can Eat Lobsterfest</a><br>
-		                <p> Saturday, August 27, 2016<br>
-		                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
-		        </div>
-                <div class="month">
-                    <h2> SEPTEMBER </h2>
-		                <p> Saturday, September 10, 2016. 8:00am<br>
-		                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a><br></p>
-		                <p> Sunday, September 18, 2016<br>
-		                Pastor's 11th Anniversary</p>
-		                <p> Saturday, September 24, 2016. 8:00am<br>
-		                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a><br></p>
-		        </div>
-		        <div class="month">
-		            <h2> OCTOBER </h2>
-		                <p> Saturday, October 8, 2016. 8:00am<br>
-		                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a><br></p>
-		                <p> Sunday, October 9, 2016<br>
-		                Joint Board Recognition</p>
-		                <p>Saturday, October 15, 2016 <br>
-		                <a href="Images/samson.jpg">Bus Outing to Sight & Sound</a></p>
-		                <p> Saturday, October 22, 2016. 8:00am<br>
-		                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a><br></p>
-		        </div>
+    <!-- rolling three months; updated monthly or as needed --> 
+    <div class="container-fluid"
+<div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4" id="cur-month">
+           <h2>NOVEMBER</h2>
+                <p> Saturday, November 5, 2016. 9:00am<br>
+                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
+                <p> Sunday, November 13, 2016. 3:30pm<br>
+                In Fellowship @1st Baptist Church</p>
+                <p> Sunday, November 20, 2016. 11:00am<br>
+                <a href="Images/FamandFriends2016.jpg"">Family and Friends Day</a></p>
+                <p> Saturday, November 19, 2016. 9:00am<br>
+                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
+                <p> Thursday, November 24, 2016. 12:00n <br>
+                <a href="Images/Tday2016.jpg">Thanksgiving Day Dinner</a></p>
         </div>
-
-<!--section for right side page content-->
-         <div class="rightside">
-            <a href="https://www.bible.com/bible-verse-of-the-day"><img src="Images/bible.jpg"></a>
-                <p> </p>
-            <a href="https://www.bible.com/bible-verse-of-the-day" id="bibleverse">
-                Click here for the<br> <span>Daily Bible Verse</span> <br>
-                (courtesy of YouVersion)
-            </a>
-        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4" id="month2">
+         <h2>DECEMBER</h2>
+                <p> Saturday, December 3, 2016. 9:00am<br>
+                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
+                <p> Sunday, December 11, 2016. 3:30pm<br>
+                Nurses Annual Celebration</p>
+                <p>Friday, December 16, 2016. 3:00pm<br>
+                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
+                <p> Saturday, December 17, 2016. 12:00n<br>
+                Annual Holiday Dinner<br></p>
+                <p>Sunday, December 25, 2016<br>
+                Christmas Day
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4" id="month3">
+          <h2>JANUARY</h2>
+                <p> Sunday, January 1, 2017. 11:00am<br>
+                Communion Sunday</p>
+                <p>Saturday, January 7, 2017. 9:00am<br>
+                <a href="Images/food-pantry-flyer.jpg">Food Pantry</a></p>
+                <p> Sunday, Janaury 10, 2017. <br>
+                Ministries'Financial Reports Due</p>
+                <p> Monday, January 16, 2017<br>
+                Martin Luther King Day Celebration</p>
+                <p> Saturday, January 28, 2017. 12:00n<br>
+                Annual Church Meeting<br></p>
+          
+      </div>
+      </div> <!-- close container div before row -->
+      </div> <!-- close panel body div -->
+        </div> <!-- close panel div -->
+</div> <!--closes container div-->
 
 <!--section for footer on every page-->
-         <footer> 
+        <footer> 
                 <p> 340 Convent Ave, New York NY 10031, 212-368-4754, 
-                <a href="mailto:churchadmin@greatertabernaclebc.org">churchadmin@greatertabernaclebc.org</a>
-                    <br> Designed by MsFloyd 2016 <br>
+                    <a href="mailto:churchadmin@greatertabernaclebc.org">churchadmin@greatertabernaclebc.org</a>
+                    <br> Designed by MsFloyd (c) 2016 <br>
                     <a href="https://www.facebook.com/GreaterTabernacleBC/"> 
                         <img src="Images/facebook-logo.png"/> </a>
                 </p>
-        </footer>    
-    </body>
+        </footer>  
+
+   
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/jquery.simpleWeather.js"></script>
+    <script src="js/weatherNY.js"></script>
+
+</body>
 </html>

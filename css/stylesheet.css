@@ -1,0 +1,302 @@
+.container-fluid {
+    width:100%;
+    height: 100%;
+}
+
+/* background color for the pages is dodgerblue*/
+body {
+	background-color:#1E90FF;
+	text-align:center;
+}
+/* style for the header that will apear on every page*/
+.jumbotron {
+    background-image: url('../Images/clouds.jpg');
+    background-size: cover;
+    color: blue;
+    font-weight: bolder;
+    text-align:center;
+}
+.jumbotron h3 span {
+    font-family: cursive;
+    color: blue;
+}
+.navbar, .panel {
+    background-color: #FF9D08;
+    color: black;
+    font-weight: bolder;
+}
+.navbar-toggle {
+    background-color: #0000FF;
+    color: white;
+    font-weight: bolder;
+}
+
+.sermonfiles {
+    background-color: #FF9D08;
+    font-size: smaller;
+}
+#spacefiller {
+    color: white;
+}
+audio {
+    display: inline-block;
+    vertical-align: baseline;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.carousel-inner item {
+    height: 100%;
+    width: 100%;
+}
+.homepage {
+    background-color: #FF9D08;
+    background-size: 100%;
+}
+#second, .givingpage {
+    color:black;
+    background-color: #F5E7DE;
+    font-family: serif;
+    font-size: 1.5em;
+    text-align: justify;
+}
+.filler {
+    color: transparent;
+}
+#second a {
+    color: #1e90ff;
+}
+#bibleimg {
+    height:30%;
+    width:30%;
+}
+
+.modal-dialog {
+    width: 100%;
+}
+
+h2, h3, h1 {
+    text-decoration:underline;
+    text-align:center;
+}
+
+.calendar a:hover {
+    background-color: #1e90ff;
+    color: white; 
+}
+
+h3 a, .photos, #photostitle, label {
+    color:#FF9D08;
+}
+#photopagetitle {
+    color: white;
+}
+
+form > h3 {
+    color: black;
+}
+#contactdiv {
+    width:50%;
+    margin: auto;
+}
+
+h3 a:hover {
+    background-color:navy;
+    color:yellow;
+    font-weight: bolder;
+}
+
+.dropdown {
+    border: 1px black solid;
+    color: black;
+    font-weight: bolder;
+}
+[role="presentation"] {
+    border: 1px black solid;
+    color: black;
+    font-weight: bolder;
+}
+.item {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+/*remove the bullets from the unordered list items*/
+ul {
+    list-style:none;
+}    
+.divider{
+    width:20px;
+    display:inline-block;
+}
+#min-list {
+    list-style-type: disc;
+    max-width: 95%; 
+}
+.contact, .calendar {
+        text-align:center;
+        color:blue;
+        font-weight: bolder;
+}
+
+.contact a {
+    color: white;
+}
+#pagetitle {
+    text-decoration:underline;
+    font-family: Verdana;
+    font-weight: bolder;
+    font-stretch: expanded;
+}
+
+/* Remove the underline from associated text*/
+.noline {
+    text-decoration: none;
+    text-align: center;
+}
+
+/*style for the site to link to a daily bible verse*/
+#bibleverse {
+    font-family:cursive;
+    font-size: 1.5em;
+    text-decoration: underline;
+    color:red;
+}
+
+
+#pastorc  {
+    margin: auto;
+    height: 20%;
+    width:20%;    
+}
+    
+/* commenting out picture formats until later
+#bldg  {
+    float:right;
+    height: 20%;
+    width:20%;
+}
+*/
+#bldg2 {
+    height:40%;
+    width:40%;
+}
+
+#cur-month {
+    border: red dashed;
+    font-weight: bold;
+    border-radius: 20%;
+    font-size: 1.5em;
+}
+#month2, #month3 {
+    border: black solid;
+    border-radius:20%;
+    font-size: 1.5em;
+}
+#main-img {
+width: 500px;
+height: 400px; 
+margin-bottom: 1%;
+
+}
+
+#gallery li img {
+    width: 250px;
+    height: 120px;  
+    margin-bottom: 1%;
+
+}
+
+#gallery li {
+    display: inline;
+    margin-right: 1%;
+}
+
+#blinktext {
+    animation-duration: 1000ms;
+    animation-name: tgle;
+    animation-iteration-count: 10;
+    color:#1e90ff;
+}
+@keyframes tgle {
+    0.00%    {opacity: 0;}
+    49.99%   {opacity: 0;}
+    50.00%   {opacity: 1;}
+    99.99%   {opacity: 1;}
+    100%     {opacity: 0;}
+}
+
+td a  {
+    height:30px;
+    width: 30px;
+    border-style:hidden;
+}
+
+#weather {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: none;
+}
+
+#weather h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 150px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+#fcstList {
+  display: inline;
+}
+
+#weather .currently {
+  margin: 0 20px;
+}
+/* footer to appear at the bottom of every page */
+footer { 
+        background-color:#708090; 
+        color:navy; 
+        width:100%;
+        height:85px;
+        margin:0 0 0 0;
+        font-family:Helvetica, sans-serif;
+        font-weight: bold;
+        outline:solid black 2px;
+        text-align:center;
+        padding:0px;
+        clear:both;
+}
+footer a {
+    color:white;
+}
+footer a:hover {
+    font-size:1em;
+    color:yellow;
+}
+
+/*---------MEDIA QUERIES----------*/
+@media only screen and (max-width:699px) {
+    #third, #first {display: none;} 
+    .contact a {font-size: 75%;}
+    footer {padding-bottom: 25%;}
+}
+
+@media only screen and (min-width:700px) and (max-width:1024px) {
+   .item > .img-responsive {
+        border-radius:50%;}
+}

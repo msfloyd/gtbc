@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-    <title> Web Site for a Small Church </title> 
-    <link href="https://fonts.googleapis.com/css?family=Chonburi|Montserrat:700|Open+Sans" rel="stylesheet">
-    </head>
-    <link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
-    <body>
-        
-<!--section for header on every page.-->    
-        <header>
-             <h1>Greater Tabernacle Baptist Church </h1>
-             <p>Rev. Jeffrey M. Crenshaw, Pastor <br>
-             <em>"We Walk By Faith"</em>  </p>
-        </header>
-   
-<!--section for menu bar on every page -->  
-        <div class="nav">
-          <ul >
-              <li> <a href="index.html">Home</a> </li>
-              <li> <a href="aboutUs.html">About Us </a> </li>
-              <li> <a href="calendar.html">Calendar/Events </a> </li>
-              <li> <a href="photos.html">Photo Gallery </a> </li>
-              <li> <a href="giving.html">Giving  </a></li>
-              <li> <a href="contactUs.html">Contact Us </a> </li>
-          </ul>  
-        </div>
-     
-<!--section for left side page content-->
-         <div class="leftside">
-            <a href="Images/WeeklyCal.jpg"><img src="Images/WeeklyCal.jpg"> </a>
-            <a href="Images/whatshappening.jpg"><img src="Images/whatshappening.jpg"> </a>
-        </div>
-       
-<!--section for main content on each page-->
-         <div class="main">
-            <h2 id="pagetitle"> PHOTO GALLERY</h2>
-            <table>
-                <tr class="pictures">
-                    <td> <a href="Images/skating1.jpg"><img src="Images/skating1.jpg"></a></td>
-                    <td> <a href="Images/skating2.jpg"><img src="Images/skating2.jpg"></td>
-                    <td> <a href="Images/sleepover1.jpg"><img src="Images/sleepover1.jpg"></td>
-                </tr>
-                <tr class="pictures">
-                    <td> <a href="Images/sleepover2.jpg"><img src="Images/sleepover2.jpg"></td>
-                    <td> <a href="Images/xmasparty1.jpg"><img src="Images/xmasparty1.jpg"></td>
-                    <td> <a href="Images/xmasparty2.jpg"><img src="Images/xmasparty2.jpg"></td>
-                </tr>
-                <tr class="pictures">
-                    <td> <a href="Images/NYE2016.jpg"><img src="Images/NYE2016.jpg"></td>
-                    <td> <a href="Images/IMG_0772.jpg"><img src="Images/IMG_0772.jpg"></td>
-                    <td> <a href="Images/IMAG0166.jpg"><img src="Images/IMAG0166.jpg"></td>
-                </tr>
-            </table>
-        </div>
+<head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- The above 3 meta tags *must* come first in the head; any other head 
+          content must come *after* these tags -->
+  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
-<!--section for right side page content-->
-         <div class="rightside">
-            <a href="https://www.bible.com/bible-verse-of-the-day"><img src="Images/bible.jpg"></a>
-                <p> </p>
-            <a href="https://www.bible.com/bible-verse-of-the-day" id="bibleverse">
-                Click here for the<br> <span>Daily Bible Verse</span> <br>
-                (courtesy of YouVersion)
-            </a>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                  <!-- [if lt IE 9]>
+                      <script
+          src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                      <script
+          src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>  
+                  <!-- endif] -->
+          
+        <title> GTBC v2 </title>
+</head>
+ <!-- *********************************************************************** -->
+ 
+<body>
+    <div class="container-fluid">
+    <!--section for menu bar on every page. fixed to top of page. collapsible-->  
+        <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="navbar-header">
+            <button type="button" data-target="#menubar" data-toggle="collapse" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
         </div>
+        <div class="collapse navbar-collapse" id="menubar">
+          <ul class="nav nav-pills nav-justified">
+              <li role="presentation" > <a href="index.html">Home</a></li>
+              <li class="dropdown"> <a id="drop2" href="aboutUs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> About Us <span class="caret"></span> </a> 
+                  <ul class="dropdown-menu" aria-labelledby="drop2"> 
+                    <li><a href="ourchurch.html">Our Church</a></li> 
+                    <li><a href="pastor.html">Our Pastor</a></li> 
+                    <li><a href="ministries.html">Our Ministries</a></li> 
+                    <li role="separator" class="divider"></li> 
+                  </ul> </li> 
+              <li role="presentation" > <a href="calendar.html">Calendar/Events </a></li>
+<!--              <li class="active" role="presentation" > <a href="photos.html">Photo Gallery </a></li> -->
+              <li role="presentation" > <a href="sermons.html">Sermons </a> </li>
+              <li role="presentation" > <a href="giving.html">Giving  </a></li>
+              <li role="presentation" > <a href="contactUs.html">Contact Us </a></li>
+          </ul>  
+          </div> <!-- close navbar collapse div -->
+        </nav>
+     <br> <br> <br>
+
+<!--section for header on every page.-->  
+    <div class="jumbotron">
+        <h1 class="noline">Welcome To <br>Greater Tabernacle Baptist Church</h1>
+        <h2 class="noline">Rev. Jeffrey M. Crenshaw, Pastor </h2>
+             <h3 class="noline"><span>"We Walk By Faith"</span></h3>
+    </div>
+    
+<!-- section for respective page content -->
+<div class="container-fluid">
+<div id="gallery">
+        <h1 id="photopagetitle">Photo Gallery</h1>
+        <h3 id="photostitle"> Events in Pictures</h3>
+
+    <img id="main-img" src="Images/xmasparty1.jpg" />
+      <ul class="switch">
+        <li><img src="Images/skating2.jpg" /></li>
+        <li><img src="Images/NYE2016.jpg" /> </li>
+        <li><img src="Images/sleepover1.jpg" /></li>
+        <li><img src="Images/IMAG0166.jpg" /></li>
+        <li><img src="Images/xmasparty1.jpg"/></li>
+        
+      </ul>
+    </div>  
+</div>
+  <br>
+</div> <!--closes container div-->
 
 <!--section for footer on every page-->
-         <footer> 
+        <footer> 
                 <p> 340 Convent Ave, New York NY 10031, 212-368-4754, 
-                <a href="mailto:churchadmin@greatertabernaclebc.org">churchadmin@greatertabernaclebc.org</a>
-                    <br> Designed by MsFloyd 2016 <br>
+                    <a href="mailto:churchadmin@greatertabernaclebc.org">churchadmin@greatertabernaclebc.org</a>
+                    <br> Designed by MsFloyd (c) 2016 <br>
                     <a href="https://www.facebook.com/GreaterTabernacleBC/"> 
                         <img src="Images/facebook-logo.png"/> </a>
                 </p>
-        </footer>     
-    </body>
+        </footer>  
+   
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+</body>
 </html>

@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-    <title> Web Site for a Small Church </title> 
-    <link href="https://fonts.googleapis.com/css?family=Chonburi|Montserrat:700|Open+Sans" rel="stylesheet">
-    </head>
-    <link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
-    <body>
-        
-<!--section for header on every page.-->    
-        <header>
-             <h1>Greater Tabernacle Baptist Church </h1>
-             <p>Rev. Jeffrey M. Crenshaw, Pastor <br>
-             <em>"We Walk By Faith"</em>  </p>
-        </header>
-   
-<!--section for menu bar on every page -->  
-        <div class="nav">
-          <ul >
-              <li> <a href="index.html">Home</a> </li>
-              <li> <a href="aboutUs.html">About Us </a> </li>
-              <li> <a href="calendar.html">Calendar/Events </a> </li>
-              <li> <a href="photos.html">Photo Gallery </a> </li>
-              <li> <a href="giving.html">Giving  </a></li>
-              <li> <a href="contactUs.html">Contact Us </a> </li>
+<head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- The above 3 meta tags *must* come first in the head; any other head 
+          content must come *after* these tags -->
+  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                  <!-- [if lt IE 9]>
+                      <script
+          src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                      <script
+          src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>  
+                  <!-- endif] -->
+          
+        <title> GTBC v2 </title>
+</head>
+ <!-- *********************************************************************** -->
+ 
+<body>
+    <div class="container-fluid">
+    <!--section for menu bar on every page. fixed to top of page. collapsible -->  
+        <nav class="navbar navbar-fixed-top navbar-default">
+         <div class="navbar-header">
+            <button type="button" data-target="#menubar" data-toggle="collapse" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="menubar">
+          <ul class="nav nav-pills nav-justified">
+              <li role="presentation" > <a href="index.html">Home</a></li>
+              <li class="dropdown"> <a id="drop2" href="aboutUs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> About Us <span class="caret"></span> </a> 
+                  <ul class="dropdown-menu" aria-labelledby="drop2"> 
+                    <li><a href="ourchurch.html">Our Church</a></li> 
+                    <li><a href="pastor.html">Our Pastor</a></li> 
+                    <li><a href="ministries.html">Our Ministries</a></li> 
+                    <li role="separator" class="divider"></li> 
+                  </ul> </li> 
+              <li role="presentation" > <a href="calendar.html">Calendar/Events </a></li>
+ <!--             <li role="presentation" > <a href="photos.html">Photo Gallery </a></li> -->
+              <li role="presentation" > <a href="sermons.html">Sermons </a> </li>
+              <li role="presentation" > <a href="giving.html">Giving  </a></li>
+              <li class="active" role="presentation" > <a href="contactUs.html">Contact Us </a></li>
           </ul>  
-        </div>
+          </div> <!-- close navbar collapse div -->
+        </nav>
      
-<!--section for left side page content-->
-         <div class="leftside">
-            <a href="Images/WeeklyCal.jpg"><img src="Images/WeeklyCal.jpg"> </a>
-            <a href="Images/whatshappening.jpg"><img src="Images/whatshappening.jpg"> </a>
-        </div>
-       
-<!--section for main content on each page-->
-        
-         <div class="main">
+<!--section for header on every page.-->  
+<br> <br> <br>
+    <div class="jumbotron">
+        <h1 class="noline">Welcome To <br>Greater Tabernacle Baptist Church</h1>
+        <h2 class="noline">Rev. Jeffrey M. Crenshaw, Pastor </h2>
+             <h3 class="noline"><span>"We Walk By Faith"</span></h3>
+    </div>
+<!-- section for respective page content -->
+<div class="panel panel-default">
+    <div class="panel-body">        
+           <div class="contact">
             <h2 id="pagetitle"> CONTACT US</h2>
-             <h3 class="noline"> Call Us: 212-368-4754</h3><br>
-            <h3> Email Us: <a href="mailto:churchadmin@greatertabernaclebc.org">churchadmin@greatertabernaclebc.org</a></h3><br>
+             <h3 class="noline"><span class="glyphicon glyphicon-earphone"></span> 212-368-4754</h3><br>
+            <h3> <span class="glyphicon glyphicon-envelope"></span>&nbsp<a href="mailto:churchadmin@greatertabernaclebc.org">churchadmin@greatertabernaclebc.org </a></h3><br>
             <h3 class="noline">Visit Us <br><a href=https://www.google.com/maps/dir//340+Convent+Avenue,+New+York,+NY/@40.824246,-73.9490487,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c2f67ca66794b7:0x19e0e9485ac00045!2m2!1d-73.94686!2d40.824246>
-                <img src="Images/GTBCbldg.jpg" id="bldg2"><br>DIRECTIONS</a></h3> 
+                <img src="Images/GTBCbldg.jpg" id="bldg2" class="img-responsive center-block"><br>DIRECTIONS</a></h3> 
             <h3 class="noline">340 Convent Ave @144th St, New York NY 10031</h3><br>
          </div>
+  
+<div id="contactdiv"> 
+<form class="form-horizontal" action="mailto:mdp777@aol.com" method="post" enctype="text/plain">
+    <h3>Have a question or a comment?</h3>
+    <div class="form-group">
+          <label for="name" class="col-sm-12 control-label"></label>
+          <input type="text" class="form-control" name="Name: " id="name" placeholder="Your name">
+    </div>
+    <div class="form-group">
+        <label for="mail" class="col-sm-12 control-label"></label>
+        <input type="text" class="form-control" name="Email Address: " id="mail" placeholder="Your email address">
+    </div>
+    <div class="form-group">
+        <label for="comment" class="col-sm-12 control-label"></label>
+        <textarea class="form-control" rows="5" name="Comment/Question: " id="comment" placeholder="Write your question or comment here"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>  
+        <button type="reset" class="btn btn-secondary">Reset</button>
+   
+    </div>
+</form>
 
-<!--section for right side page content-->
-         <div class="rightside">
-            <a href="https://www.bible.com/bible-verse-of-the-day"><img src="Images/bible.jpg"></a>
-                <p> </p>
-            <a href="https://www.bible.com/bible-verse-of-the-day" id="bibleverse">
-                Click here for the<br> <span>Daily Bible Verse</span> <br>
-                (courtesy of YouVersion)
-            </a>
-        </div>
+</div>  <!-- close panel body div -->
+</div>  <!-- close panel div -->
+</div>  <!-- close homepage div --> 
+</div> <!--closes container div-->
 
+<br><br>  
 <!--section for footer on every page-->
          <footer> 
                 <p> 340 Convent Ave, New York NY 10031, 212-368-4754, 
@@ -62,5 +105,12 @@
                         <img src="Images/facebook-logo.png"/> </a>
                 </p>
         </footer>   
-    </body>
+
+   
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
 </html>
