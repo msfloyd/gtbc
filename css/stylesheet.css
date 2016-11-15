@@ -26,9 +26,12 @@ body {
     font-weight: bolder;
 }
 .navbar-toggle {
-    background-color: #0000FF;
+    background-color: #1E90FF;
     color: white;
     font-weight: bolder;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
 }
 
 .sermonfiles {
@@ -135,7 +138,7 @@ ul {
 }
 .contact, .calendar {
         text-align:center;
-        color:blue;
+        color:#1E90FF;
         font-weight: bolder;
 }
 
@@ -181,18 +184,24 @@ ul {
     height:40%;
     width:40%;
 }
-
+.no-padding: {
+    padding: 0%;
+}
 #cur-month {
-    border: red dashed;
+    border: #1E90FF solid;
     font-weight: bold;
-    border-radius: 20%;
+    margin-bottom: 2%;
     font-size: 1.5em;
+    background-color: #F5E7DE;
 }
 #month2, #month3 {
     border: black solid;
-    border-radius:20%;
     font-size: 1.5em;
+    margin-bottom: 2%;
+    display: inline-block;
+    padding: 0%;
 }
+
 #main-img {
 width: 500px;
 height: 400px; 
@@ -257,6 +266,7 @@ td a  {
   background: #fff;
   background: rgba(255,255,255,0.90);
   padding: 5px;
+  margin-bottom: 2%;
   display: inline-block;
   border-radius: 5px;
 }
@@ -294,9 +304,15 @@ footer a:hover {
     #third, #first {display: none;} 
     .contact a {font-size: 75%;}
     footer {padding-bottom: 25%;}
+    #month2, #month3 {margin-left: 0%;
+                        margin-bottom: 3%;}
 }
 
 @media only screen and (min-width:700px) and (max-width:1024px) {
    .item > .img-responsive {
         border-radius:50%;}
+}
+
+@media only screen and (min-width:700px) {
+#weather li {margin-bottom: 1%;}
 }
